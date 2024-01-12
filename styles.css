@@ -19,7 +19,7 @@ header{
   background-color: white;
   box-shadow: 0 4px 4px 0 rgba(11, 10, 10, 0.2);
   text-align:  center;
-  padding: 20px;
+  padding: 15px;
   padding-top: 30px;
 }
 
@@ -233,10 +233,19 @@ footer{
 .footer-icon{
   padding-right: 10px;
 }
+/* menu page styling */
 
+.fa-arrow-left{
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: 30;
+  left: 20;
+}
 .restaurant-header img{
   width: 100%;
   position: relative;
+  top: 0;
 }
 
 .menu{
@@ -261,6 +270,7 @@ footer{
 
 .description{
   position: relative;
+  line-height: 1;
 }
 
 .price{
@@ -270,6 +280,17 @@ footer{
   bottom: 5;
   position:absolute;
   transition: transform .7s ease-in-out;
+}
+.menu-title{
+  position: relative;
+}
+.menu h3{
+  border-bottom: 3px solid #90dcca;
+  width: 100px;
+  padding-bottom: 5px;
+  font-weight: 300;
+  font-size: 18px;
+
 }
 
 .menu-card{
@@ -285,6 +306,7 @@ footer{
   transition: 0.3s;
   position: relative;
   overflow: hidden;
+  animation: fadein 2s;
 }
 
 .menu-card:hover{
@@ -307,16 +329,17 @@ transform: translateX(-60px);
   position: absolute;
   right: -60;
   bottom: 0;
-  top: 5;
+  top: 10;
   border-radius: 0px 20px 20px 0;
   transition: transform .7s ease-in-out;
   animation: spin 7s infinite;
 }
 
 
+
 .checkmark-bg{
-  color: red;
-  background-color: red;
+  color: #90dcca ;
+  background-color: #90dcca ;
   font-size: 20px;
   padding: 20px 20px 20px 20px;
   position: absolute;
