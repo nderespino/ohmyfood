@@ -244,20 +244,19 @@ footer{
 }
 .restaurant-header img{
   width: 100%;
-  position: relative;
   top: 0;
 }
 
 .menu{
   background-color: #eae9e9;
-  top: 270;
   left: 0;
   right: 0;
+  padding-top: 15px;
   padding-left: 15px;
   padding-right: 10px;
   border-radius: 50px 50px 0 0;
-  position: absolute;
-  float: left;
+  margin-top: -70px;
+  position: relative;
 }
 
 .menu h1{
@@ -274,12 +273,12 @@ footer{
 }
 
 .price{
-  background-color: white;
   font-weight: 600;
   right: 10;
   bottom: 5;
   position:absolute;
   transition: transform .7s ease-in-out;
+  transform: translateX(0);
 }
 .menu-title{
   position: relative;
@@ -293,10 +292,18 @@ footer{
 
 }
 
+.menu-description{
+  background-color: red;
+  width: 70%;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  display: inline-block;
+  overflow: hidden;
+}
+
 [class^="menu-card-"]{
   font-size: 16px;
   line-height: 0.5;
-  padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
@@ -307,6 +314,7 @@ footer{
   position: relative;
   overflow: hidden;
   animation: fadein 2s ease-out;
+  display: flex;
 }
 
 
@@ -319,45 +327,51 @@ footer{
 
 
 [class^="menu-card-"]:hover .check-mark{
-  transform: translateX(-60px);
+  transition: translateX(60px);
+  animation: spin .5s 1 .3s;
 }
 
 [class^="menu-card-"]:hover .checkmark-bg{
-transform: translateX(-60px);
+right: 0;
+
 }
 
 .check-mark{
   color: white;
   font-size: 22px;
-  padding: 20px 20px 20px 20px;
-  position: absolute;
-  right: -60;
-  bottom: 0;
-  top: 10;
+  padding: 25px 0;
+  right: -65;
   border-radius: 0px 20px 20px 0;
-  transition: transform .7s ease-in-out;
-  animation: spin 7s infinite;
+  transition: right .7s ease-in-out;
+  text-align: center;
+}
+
+@keyframes spin{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)}
 }
 
 
 
 .checkmark-bg{
-  color: #90dcca ;
   background-color: #90dcca ;
   font-size: 20px;
-  padding: 20px 20px 20px 20px;
+  padding: 0 20px;
   position: absolute;
-  right: -60;
+  right: -65;
   bottom: 0;
   top: 0;
   border-radius: 0px 20px 20px 0;
   display: block;
-  transition: transform .7s ease-in-out;
+  transition: right .7s ease-in-out;
+  text-align: center;
 }
 
-.menu-card:hover .price{
+[class^="menu-card-"]:hover .price{
   transform: translateX(-60px);
 }
+
+
 
 
 
