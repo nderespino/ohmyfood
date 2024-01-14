@@ -261,6 +261,7 @@ footer{
 
 .menu h1{
   padding: 10px;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .dish{
@@ -283,6 +284,7 @@ footer{
 .menu-title{
   position: relative;
 }
+
 .menu h3{
   border-bottom: 3px solid #90dcca;
   width: 100px;
@@ -293,7 +295,6 @@ footer{
 }
 
 .menu-description{
-  background-color: red;
   width: 70%;
   white-space: nowrap;
   text-overflow:ellipsis;
@@ -301,7 +302,7 @@ footer{
   overflow: hidden;
 }
 
-[class^="menu-card-"]{
+.menu-card{
   font-size: 16px;
   line-height: 0.5;
   padding-left: 10px;
@@ -313,27 +314,61 @@ footer{
   transition: 0.3s;
   position: relative;
   overflow: hidden;
-  animation: fadein 2s ease-out;
+  animation: fadeIn 2s forwards;
   display: flex;
+  opacity: 0;
 }
 
 
 
-@keyframes fadein {
+@keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 
 
-[class^="menu-card-"]:hover .check-mark{
+.menu-card:hover .check-mark{
   transition: translateX(60px);
   animation: spin .5s 1 .3s;
 }
 
-[class^="menu-card-"]:hover .checkmark-bg{
+.menu-card:hover .checkmark-bg{
 right: 0;
 
+}
+
+/* animation delay for each menu card */
+.entrees .menu-card:nth-child(3){
+  animation-delay: .4s;
+}
+
+.entrees .menu-card:nth-child(4){
+  animation-delay: .6s;
+}
+
+.main-dish .menu-card:nth-child(2){
+  animation-delay: .8s;
+}
+
+.main-dish .menu-card:nth-child(3){
+  animation-delay: 1s;
+}
+
+.main-dish .menu-card:nth-child(4){
+  animation-delay: 1.2s;
+}
+
+.desserts .menu-card:nth-child(2){
+  animation-delay: 1.5s;
+}
+
+.desserts .menu-card:nth-child(3){
+  animation-delay: 1.7s;
+}
+
+.desserts .menu-card:nth-child(4){
+  animation-delay: 2s;
 }
 
 .check-mark{
@@ -367,7 +402,7 @@ right: 0;
   text-align: center;
 }
 
-[class^="menu-card-"]:hover .price{
+.menu-card:hover .price{
   transform: translateX(-60px);
 }
 
