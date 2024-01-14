@@ -69,13 +69,19 @@ header img{
 
 
 
-
 .how{
+  background-color: white;
+  padding-top: 20px;
+  text-align: center;
+}
+.how-content{
   text-align: center;
   padding: 20px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .how-icon{
@@ -87,8 +93,8 @@ header img{
 
 .how-to-cards{
   display: flex;
-  font-size: 16px;
   justify-content: left;
+  font-size: 16px;
   padding: 10px;
   padding-left: 40px;
   padding-right: 10px;
@@ -115,7 +121,8 @@ header img{
   padding: 8px 12px;
   border-radius: 50px;
   color: white;
-  left: -10;
+  left: -10 ;
+  top: 0;
 }
 
 .new-tag{
@@ -125,7 +132,7 @@ header img{
   color: #0d9672;
   font-weight: 500;
   border: 4px;
-  padding: 12px 40px;
+  padding: 12px 20px;
   position: absolute;
   box-shadow: 0 4px 4px 0 rgba(76, 74, 74, 0.2);
   left: 73%;
@@ -134,13 +141,23 @@ header img{
 
 
 
-#restaurants {
-  gap: 20px;
-  display: flex;
+#restaurants{
+  background-color:rgb(246, 246, 246);
+padding-top: 20px;
+}
+
+#restaurants h1{
+  padding-left: 20px;
+}
+
+.restaurant-content{
+  display:flex;
   flex-direction: column;
   padding: 25px;
   background-color: rgb(246, 246, 246);
   padding-bottom: 60px;
+  gap: 20px;
+
 }
 
 
@@ -200,8 +217,8 @@ header img{
   font-size: 40px;
   color: rgb(58, 58, 58);
   position: absolute;
-  top: 50;
-  right: 40;
+  top: 50 ;
+  right: 40 ;
 }
 
 .full-heart{
@@ -238,14 +255,60 @@ footer a{
 .footer-icon{
   padding-right: 10px;
 }
+
+  /* homepage breakpoints */
+
+  @media screen and (min-width : 500px) {
+    header img{
+      width: 20%;
+      float: left;
+    }
+    header{
+      padding: 30px;
+      padding-top: 20px
+    }
+
+    .how h1{
+      text-align: center;
+    }
+    .how-content{
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .how-to-cards{
+      padding-top: 10px;
+      padding-bottom: 0;
+      padding-right: 40px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 5px;
+      padding-right: 10px;
+      width: 70%;
+      
+    }
+
+    
+    
+    .restaurant-content a{
+      width: 50%;
+      position: relative;
+      flex-wrap: wrap;
+      flex-direction: row;
+  
+    }
+
+  }
+  
+
 /* menu page styling */
 
 .fa-arrow-left{
   font-size: 30px;
   color: black;
   position: absolute;
-  top: 30;
-  left: 20;
+  top: 30 ;
+  left: 20 ;
 }
 .restaurant-header img{
   width: 100%;
@@ -280,8 +343,8 @@ footer a{
 
 .price{
   font-weight: 600;
-  right: 10;
-  bottom: 5;
+  right: 10 ;
+  bottom: 5 ;
   position:absolute;
   transition: transform .7s ease-in-out;
   transform: translateX(0);
@@ -380,7 +443,7 @@ right: 0;
   color: white;
   font-size: 22px;
   padding: 25px 0;
-  right: -65;
+  right: -65 ;
   border-radius: 0px 20px 20px 0;
   transition: right .7s ease-in-out;
   text-align: center;
@@ -398,7 +461,7 @@ right: 0;
   font-size: 20px;
   padding: 0 20px;
   position: absolute;
-  right: -65;
+  right: -65 ;
   bottom: 0;
   top: 0;
   border-radius: 0px 20px 20px 0;
