@@ -212,15 +212,20 @@ header img{
   opacity: 0;
 }
 
-.full-heart:hover{
+.full-heart:active{
   opacity: 100;
-  transition: opacity .10s ease-in-out;
+  transition: opacity .5s ease-in-out;
 
 }
 
 footer{
   background-color: rgb(41, 41, 41);
   padding: 30px;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
   color: white;
 }
 
@@ -328,12 +333,12 @@ footer{
 
 
 
-.menu-card:hover .check-mark{
+.menu-card:active .check-mark{
   transition: translateX(60px);
   animation: spin .5s 1 .3s;
 }
 
-.menu-card:hover .checkmark-bg{
+.menu-card:active .checkmark-bg{
 right: 0;
 
 }
@@ -402,7 +407,7 @@ right: 0;
   text-align: center;
 }
 
-.menu-card:hover .price{
+.menu-card:active .price{
   transform: translateX(-60px);
 }
 
