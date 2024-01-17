@@ -85,7 +85,6 @@ header img{
 }
 
 .how-icon{
-  float: left;
   color: rgb(106, 106, 106);
   padding-right: 10px;
   }
@@ -93,7 +92,6 @@ header img{
 
 .how-to-cards{
   display: flex;
-  justify-content: left;
   font-size: 16px;
   padding: 10px;
   padding-left: 40px;
@@ -161,6 +159,8 @@ padding-top: 20px;
 }
 
 
+
+
 #restaurants a{
   text-decoration: none;
   color: black;
@@ -187,6 +187,12 @@ padding-top: 20px;
   padding: 0;
   width: 100%;
   height: 250px;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .restaurant-card:hover{
@@ -229,7 +235,7 @@ padding-top: 20px;
   opacity: 0;
 }
 
-.full-heart:active{
+.full-heart:hover{
   opacity: 100;
   transition: opacity .5s ease-in-out;
 
@@ -258,7 +264,7 @@ footer a{
 
   /* homepage breakpoints */
 
-  @media screen and (min-width : 500px) {
+  @media screen and (min-width : 500px) and (max-width: 768px) {
     header img{
       width: 20%;
       float: left;
@@ -277,26 +283,39 @@ footer a{
     }
 
     .how-to-cards{
-      padding-top: 10px;
+      padding-top: 5px;
+      padding-right: 10px;
+      line-height: 1;
       padding-bottom: 0;
-      padding-right: 40px;
-      margin-top: 20px;
-      margin-right: 20px;
-      margin-left: 5px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 30px;
+      text-align: center;
+      margin-top: 10px;
       padding-right: 10px;
       width: 70%;
       
     }
 
-    
+    .restaurant-content{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
     
     .restaurant-content a{
-      width: 50%;
-      position: relative;
-      flex-wrap: wrap;
-      flex-direction: row;
-  
+      flex-basis: 50%;
+      box-sizing: border-box;
+    
     }
+
+    .row{
+      display:flex;
+      gap: 20px;
+      flex-direction: row;
+    }
+
+    
 
   }
   
@@ -365,9 +384,9 @@ footer a{
 .menu-description{
   width: 70%;
   white-space: nowrap;
-  text-overflow:ellipsis;
   display: inline-block;
-  overflow: hidden;
+
+
 }
 
 .menu-card{
@@ -396,12 +415,12 @@ footer a{
 
 
 
-.menu-card:active .check-mark{
+.menu-card:hover .check-mark{
   transition: translateX(60px);
   animation: spin .5s 1 .3s;
 }
 
-.menu-card:active .checkmark-bg{
+.menu-card:hover .checkmark-bg{
 right: 0;
 
 }
@@ -470,7 +489,7 @@ right: 0;
   text-align: center;
 }
 
-.menu-card:active .price{
+.menu-card:hover .price{
   transform: translateX(-60px);
 }
 
