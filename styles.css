@@ -220,7 +220,7 @@ padding-top: 20px;
 
 .fa-heart{
   float: right;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(58, 58, 58);
   position: absolute;
   top: 50 ;
@@ -228,7 +228,31 @@ padding-top: 20px;
 }
 
 .full-heart{
-  font-size: 40px;
+  font-size: 30px;
+  background:  linear-gradient(to top left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.full-heart:hover{
+  opacity: 100;
+  transition: opacity .5s ease-in-out;
+
+}
+
+
+.restaurant-card-content .fa-heart{
+  float: right;
+  font-size: 30px;
+  color: rgb(58, 58, 58);
+  position: absolute;
+  top: 55 ;
+  right: 30 ;
+}
+
+.restaurant-card-content .full-heart{
+  font-size: 30px;
   background:  linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -348,6 +372,7 @@ footer a{
 
 .menu h1{
   padding: 10px;
+  font-size: 25px;
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -377,7 +402,7 @@ footer a{
   width: 100px;
   padding-bottom: 5px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 
 }
 
