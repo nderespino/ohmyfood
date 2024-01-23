@@ -44,7 +44,7 @@
     height: 120px;
     animation: spin 2s linear infinite;
     position: fixed;
-    right: 40%;
+    right: 35%;
     top: 50%;
     z-index: 1;
     background-color: white;
