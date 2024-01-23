@@ -455,18 +455,18 @@ footer a{
   }
 
   .restaurant-card-content p{
-    font-size: 30px;
+    font-size: 35px;
   }
 
 
   .new-tag{
     font-weight: 500;
-    font-size: 50px;
+    font-size: 60px;
     border: 4px;
-    padding: 12px 40px;
+    padding: 20px 40px;
     position: absolute;
     left: 80%;
-    bottom: 270%;
+    bottom: 400%;
     display: block;
   
 
