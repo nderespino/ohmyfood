@@ -669,7 +669,10 @@ right: 0;
     .restaurant-card-content .fa-heart{
   font-size: 40px;
 }
-
+#restaurants h1{
+  font-size: 50px;
+  padding-left: 30px;
+}
 .restaurant-card-content .full-heart{
   font-size: 40px;
   padding-left: 20px;
@@ -794,5 +797,17 @@ right: 0;
 
   .menu-title{
   white-space: nowrap;
+  }
+
+  .desserts .menu-card:nth-child(2){
+    animation-delay: 0;
+  }
+  
+  .desserts .menu-card:nth-child(3){
+    animation-delay: 0;
+  }
+  
+  .desserts .menu-card:nth-child(4){
+    animation-delay: 0;
   }
 }
