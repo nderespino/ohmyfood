@@ -728,18 +728,27 @@ right: 0;
 
   .menu-content{
     display: flex;
-    width: 100%;
-    flex-direction: column;
-    
   }
+
+  .menu-content1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .menu-content2{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 10%
+  }
+
+ 
 
   .menu-title h3{
     font-size: 30px;
   }
 
-  .menu-card{
-    margin-right: 70%;
-  }
 
   .menu-description{
     font-size: 30px;
@@ -747,5 +756,24 @@ right: 0;
 
   .price{
     font-size: 30px;
+  }
+
+  .menu-card:hover .price{
+    transform: translateX(-120px);
+  }
+
+  .checkmark-bg{
+    padding: 0 40px;
+    right: -150;
+  }
+
+  .check-mark{
+    font-size: 40px;
+    top: 20;
+    padding: 45px 0;
+  }
+
+  .fa-heart{
+    font-size: 50px;
   }
 }
