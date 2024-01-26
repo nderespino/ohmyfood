@@ -108,11 +108,13 @@ footer a {
 
 .menu-description:hover {
   padding-right: 30%;
+  transition: 0.7s padding ease-in-out;
 }
 
 .description {
   position: relative;
   line-height: 1;
+  padding: 0;
 }
 
 .price {
@@ -267,6 +269,27 @@ footer a {
   margin-bottom: 70px;
 }
 
+@media screen and (min-width: 800px) {
+  .menu {
+    margin-top: -195px;
+  }
+  .menu h1 {
+    font-size: 35px;
+  }
+  .menu-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-content1 {
+    width: 40%;
+    margin-left: 2%;
+  }
+  .menu-content2 {
+    width: 45%;
+    margin-left: 11%;
+    margin-right: 2%;
+  }
+}
 @media screen and (min-width: 912px) {
   /* menu page breakpoint styling */
   .restaurant-header img {
@@ -276,7 +299,7 @@ footer a {
   }
   .menu h1 {
     font-size: 50px;
-    padding-left: 120px;
+    padding-left: 40px;
   }
   .logo {
     float: right;
@@ -290,12 +313,12 @@ footer a {
   }
   .menu-content1 {
     width: 40%;
-    margin-left: 5%;
+    margin-left: 2%;
   }
   .menu-content2 {
     width: 45%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 11%;
+    margin-right: 0;
   }
   .menu-title h3 {
     font-size: 30px;
@@ -339,6 +362,9 @@ footer a {
   }
   .desserts .menu-card:nth-child(4) {
     animation-delay: 0;
+  }
+  .menu .fa-heart {
+    font-size: 50px;
   }
 }
 .loader-wrap {
@@ -439,6 +465,10 @@ header img {
   text-align: center;
   text-decoration: none;
   transition: box-shadow 0.2s;
+}
+
+.explore-btn:hover {
+  box-shadow: 0 6px 6px 0 rgba(3, 3, 3, 0.2);
 }
 
 .how {

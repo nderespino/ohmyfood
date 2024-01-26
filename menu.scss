@@ -58,12 +58,15 @@
   
   .menu-description:hover{
     padding-right: 30%;
+    transition: 0.7s padding ease-in-out;
   }
   
   
   .description{
     position: relative;
     line-height: 1;
+    padding: 0;
+    
   }
   
   .price{
@@ -222,7 +225,34 @@
     margin-top: 70px;
     margin-bottom: 70px;
   }
+  @media screen and (min-width: 800px){
 
+.menu{
+  margin-top: -195px;
+}
+    .menu h1{
+      font-size: 35px;
+    }
+    .menu-content{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .menu-content1{
+      width: 40%;
+      margin-left: 2%;
+    }
+  
+    .menu-content2{
+      width: 45%;
+      margin-left: 11%;
+      margin-right: 2%
+    }
+
+
+
+
+  }
   @media screen and (min-width: 912px) {
 
  /* menu page breakpoint styling */
@@ -233,7 +263,7 @@
 
   .menu h1{
     font-size: 50px;
-    padding-left: 120px;
+    padding-left: 40px;
   }
 
   .logo{
@@ -252,13 +282,13 @@
 
   .menu-content1{
     width: 40%;
-    margin-left: 5%;
+    margin-left: 2%;
   }
 
   .menu-content2{
     width: 45%;
-    margin-left: 5%;
-    margin-right: 5%
+    margin-left: 11%;
+    margin-right: 0;
   }
 
  
@@ -305,8 +335,6 @@
   }
   
 
-
-
   .menu-title{
   white-space: nowrap;
   }
@@ -323,6 +351,8 @@
     animation-delay: 0;
   }
 
-
+.menu .fa-heart{
+  font-size: 50px;
+}
 
   }
