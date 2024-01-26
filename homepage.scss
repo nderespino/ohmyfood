@@ -165,10 +165,10 @@ header img{
   color: #0d9672;
   font-weight: 500;
   border: 4px;
-  padding: 12px 20px;
+  padding: 8px 30px;
   position: absolute;
   box-shadow: 0 4px 4px 0 rgba(76, 74, 74, 0.2);
-  right: 0;
+  right: 25;
   top: 0;
 }
 
@@ -318,7 +318,7 @@ padding-top: 20px;
   @media screen and (min-width : 800px) {
     header img{
       width: 200px;
-      float: left;
+      float: right;
       
     }
     header{
@@ -330,11 +330,16 @@ padding-top: 20px;
       font-size: 30px;
     }
 
+    .explore-btn{
+      padding: 8px 24px;
+      font-size: 25px;
+    }
+
     .how h1{
       text-align: center;
     }
     .how-content{
-      flex-direction: row;
+      flex-direction: column;
       gap: 20px;
       margin-left: 60px;
       margin-right: 60px;
@@ -342,19 +347,31 @@ padding-top: 20px;
     
     }
 
+    .number{
+      left: -22;
+    }
+
     .how-to-cards{
-      padding-top: 5px;
+      padding-top: 10px;
       padding-right: 5px;
       padding-left: 20px;
       line-height: 1;
-      padding-bottom: 0;
+      padding-bottom: 10px;
       margin-left: 0;
       margin-right: 0;
       text-align: center;
       margin-top: 10px;
-      width: 50%;
+      width: 100%;
       font-size: 20px;
       
+    }
+
+    .new-tag{
+      font-size: 20px;
+    border: 4px;
+    padding: 8px 34px;
+    right: 25;
+    top: 0;
     }
 
     .restaurant-content{
@@ -376,7 +393,9 @@ padding-top: 20px;
       flex-direction: row;
     }
 
-    
+    .logo-img{
+      width: 15%;
+    }
 
   }
 
@@ -407,13 +426,24 @@ padding-top: 20px;
     .how h1{
       font-size: 50px;
     }
+
+    .how-content{
+      flex-direction: row;
+      gap: 20px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-right: 10px;
+    
+    }
     .how-to-cards{
       font-size: 30px;
       padding-left: 40px;
       padding-right: 0;
     }
     .restaurant-card-content .fa-heart{
-  font-size: 40px;
+  font-size: 45px;
+  top: 76px;
+  right: 43px;
 }
 #restaurants h1{
   font-size: 50px;
@@ -434,6 +464,7 @@ padding-top: 20px;
     .restaurant-card-content{
     bottom: 0;
     padding-top: 10px;
+    padding-left: 40px;
     line-height: .5;
    
   }
@@ -445,16 +476,19 @@ padding-top: 20px;
 
   .new-tag{
     font-weight: 500;
-    font-size: 60px;
+    font-size: 45px;
     border: 4px;
-    padding: 20px 40px;
+    padding: 16px 68px;
     position: absolute;
-    right: 0;
+    right: 60;
     top: 0;
     display: block;
   
 
   }
 
+  .logo-img{
+    width: 10%;
+  }
   
 }
