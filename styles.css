@@ -262,6 +262,11 @@ footer a {
   transition: box-shadow 0.2s;
 }
 
+.order-btn:hover {
+  box-shadow: 0 6px 6px 0 rgba(3, 3, 3, 0.3);
+  background: linear-gradient(to top left, #9c62e2, #fc81d9);
+}
+
 .order {
   display: flex;
   justify-content: center;
@@ -468,7 +473,8 @@ header img {
 }
 
 .explore-btn:hover {
-  box-shadow: 0 6px 6px 0 rgba(3, 3, 3, 0.2);
+  box-shadow: 0 6px 6px 0 rgba(3, 3, 3, 0.3);
+  background: linear-gradient(to top left, #9c62e2, #fc81d9);
 }
 
 .how {
