@@ -58,16 +58,12 @@
   
   .menu-description:hover{
     padding-right: 30%;
-    transition: 0.7s padding ease-in-out;
+    transition: 0.7s padding ease-out;
+    transition-delay: .2s;
   }
   
   
-  .description{
-    position: relative;
-    line-height: 1;
-    padding: 0;
-    
-  }
+ 
   
   .price{
     font-weight: 600;
