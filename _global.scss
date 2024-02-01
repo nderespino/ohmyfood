@@ -3,6 +3,18 @@
     font-family: "Roboto", sans-serif;
  
   }
+
+  header{
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(11, 10, 10, 0.2);
+    text-align:  center;
+    padding: 15px;
+    padding-top: 30px;
+  }
+  
+  header img{
+    width: 50%;
+  }
   
   body {
     display: block;
@@ -53,4 +65,39 @@
           padding-top: 15px;
           width: 20%;
         }
+  }
+
+  .fa-heart{
+    float: right;
+    font-size: 30px;
+    color: rgb(58, 58, 58);
+    position: absolute;
+    top: 50 ;
+    right: 40 ;
+  }
+  
+  .full-heart{
+    font-size: 30px;
+    background:  linear-gradient(to top left, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  
+  .full-heart:hover{
+    opacity: 100;
+    transition: opacity .5s ease-in-out;
+  
+  }
+
+  @media screen and (min-width : 800px) {
+    header img{
+      width: 200px;
+      float: right;
+      
+    }
+    header{
+      padding-bottom: 60px;
+      padding-right: 20px;
+    }
   }

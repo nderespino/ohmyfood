@@ -1,3 +1,7 @@
+
+@import "./global.scss";
+
+
 .loader-wrap {
     position: fixed;
     background-color: #FFF;
@@ -47,17 +51,7 @@
     font-size: 20px;
   }
   
-header{
-  background-color: white;
-  box-shadow: 0 4px 4px 0 rgba(11, 10, 10, 0.2);
-  text-align:  center;
-  padding: 15px;
-  padding-top: 30px;
-}
 
-header img{
-  width: 50%;
-}
 
 .fa-location-dot{
   padding: 10px;
