@@ -91,6 +91,9 @@ footer a {
     padding-bottom: 60px;
     padding-right: 20px;
   }
+  .logo-img {
+    width: 10%;
+  }
 }
 .loader-wrap {
   position: fixed;
@@ -518,8 +521,5 @@ footer a {
     right: 60;
     top: 0;
     display: block;
-  }
-  .logo-img {
-    width: 10%;
   }
 }/*# sourceMappingURL=homepage.css.map */
