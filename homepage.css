@@ -82,7 +82,7 @@ footer a {
   transition: opacity 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   header img {
     width: 200px;
     float: right;
@@ -381,7 +381,7 @@ footer a {
 }
 
   /* homepage breakpoints */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   header img {
     width: 200px;
     float: right;
